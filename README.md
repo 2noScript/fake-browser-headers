@@ -1,5 +1,5 @@
 ``` js
-import browserHeader from 'fake-browser-headers'
+import {browserHeader} from 'fake-browser-headers'
 
 console.log(browserHeader())
 

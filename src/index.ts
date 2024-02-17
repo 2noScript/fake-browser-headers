@@ -3,7 +3,7 @@ import getRandomOs from "./platform";
 
 interface IOptions {}
 
-const browserHeader = (options?: IOptions) => {
+export const browserHeader = (options?: IOptions) => {
   const platform = getRandomOs();
   const browser = getRandomBrowser();
 
@@ -15,4 +15,3 @@ const browserHeader = (options?: IOptions) => {
 
   return !options ? header : {};
 };
-export default browserHeader;
